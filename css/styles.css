@@ -118,6 +118,7 @@ height: 50px;
 .pf-btn:focus {
     color: var(--white-bg-cl);
     background-color: var(--acent-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Logo */
@@ -484,8 +485,11 @@ color: rgba(255, 255, 255, 0.6);
   margin-bottom: 4px;
 }
 .portfolio-list {
-  margin: calc(var(30px) / 2);
   flex-basis: calc((100% - 30px * 2) / 3);
+}
+.portfolio-list:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 .description {
   font-weight: 400;
@@ -532,15 +536,14 @@ color: rgba(255, 255, 255, 0.6);
 
 .peculiarities-icon-container {
     background-color: rgba(245, 244, 250, 1);
-    text-align: center;
+    display: flex;
     justify-content: center;
     width: 270px;
     height: 120px;
-    gap: 30px;
+    align-items: center;
 }
  .peculiarities-icon {
-    margin-top: 25px;
-    margin-bottom: 25px;
+
  }
 
 /* Footer icons */
